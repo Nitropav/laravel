@@ -15,6 +15,7 @@ Route::get('/','BaseController@getIndex');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home'); 
-//Route::get('/{url}','BaseController@getStatic');//всегда последний
+Route::get('/home', 'HomeController@index')->name('home');
 Route::post('admin/gallery','Admin\GalleryController@postIndex');
+Route::get('/{url}','BaseController@getStatic');//всегда последний
+
